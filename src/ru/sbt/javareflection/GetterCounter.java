@@ -9,5 +9,5 @@ public interface GetterCounter {
      * @param clazz класс в котором необходимо посчитать геттеры
      * @return возвращает количество найденных геттеров
      */
-    int calcGetterCount(Class<?> clazz);
+    int calcGetterCount(Class<?> clazz) throws IllegalAccessException, InstantiationException;
 }
