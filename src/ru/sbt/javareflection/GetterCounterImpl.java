@@ -21,6 +21,7 @@ public class GetterCounterImpl implements GetterCounter {
         for (Method method : methods) {
             //System.out.println(method.getName() + " " + method.toString().contains("get"));
             if (method.toString().contains("get")) {
+                System.out.println(method.getName() + " " + method.toString().contains("get"));
                 method.setAccessible(true);
                 if (!method.isAnnotationPresent(Skip.class)) {
                     count += 1;

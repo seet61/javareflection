@@ -11,6 +11,8 @@ public class Main {
 
         try {
             System.out.println(getter.calcGetterCount(SkipData.class));
+            System.out.println(getter.calcGetterCount(HashMap.class));
+            System.out.println(getter.calcGetterCount(ArrayList.class));
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
