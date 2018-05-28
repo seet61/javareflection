@@ -2,6 +2,9 @@ package ru.sbt.javareflection.skip;
 
 import ru.sbt.javareflection.skip.annotation.Skip;
 
+/**
+ * Тестовый класс, на основании которого будет производиться первоначальная проверка
+ */
 public class SkipData {
     private String info = "info";
 
